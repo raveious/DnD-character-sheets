@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  jekyll:
+    image: raveious/jekyll-website
+    volumes:
+      - .:/site
+    ports:
+      - '80:4000'
+    environment:
+      - TARGET_REPO=https://github.com/raveious/DnD-character-sheets.git
+      - TARGET_BRANCH=master
