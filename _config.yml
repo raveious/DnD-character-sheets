@@ -1,1 +1,14 @@
+github_username: raveious
+
+# Build settings
+markdown: kramdown
 theme: jekyll-theme-merlot
+
+collections:
+  characters:
+    output: true
+  monsters:
+    output: true
+
+exclude:
+  - "docker-compose.yml"
