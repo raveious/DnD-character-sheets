@@ -58,7 +58,7 @@
           <ul>
           {% for c in site.characters %}
             {% if c.class == c_class %}
-              <li><a href="{{ c.url }}">{{ c.name }} ({{ c.race | capitalize }})</a></li>
+              <li><a href="{{ c.url | prepend: site.baseurl }}">{{ c.name }} ({{ c.race | capitalize }})</a></li>
             {% endif %}
           {% endfor %}
           </ul>
@@ -73,7 +73,7 @@
             <ul>
             {% for m in site.monsters %}
               {% if m.race == m_race %}
-                <li><a href="{{ m.url }}">{{ m.name }}</a></li>
+                <li><a href="{{ m.url | prepend: site.baseurl  }}">{{ m.name }}</a></li>
               {% endif %}
             {% endfor %}
             </ul>
