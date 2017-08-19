@@ -1,37 +1,57 @@
-## Welcome to GitHub Pages
+# DnD Character Sheets on Github Pages
 
-You can use the [editor on GitHub](https://github.com/raveious/DnD-character-sheets/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Drop a markdown file the respective folder, either `_characters` or `_monsters`, and all the layouts will automatically be set. The home page will ever generate all the links to all of the characters and monsters you have.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Template usage
 
-### Markdown
+Here is template for all the minimal required fields to properly render everything.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+---
+name: "Some awesome name"
+class: monk
+race: half-elf
+---
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+List of all character fields
 
-### Jekyll Themes
+Field | Description
+:--- | :---:
+name | Creature's name
+class | Creature's class
+level | Current creatures level
+hp | Creature's hit points
+sex | Creature's gender
+race | Creature's race. This is set to "human" if no value is provided.
+alignment | Creature's alignment
+ac | Armour Class
+str | The Strength attribute associated with this creature. This is set to 10 if no value is provided.
+dex | The Dexterity attribute associated with this creature. This is set to 10 if no value is provided.
+con | The Constitution attribute associated with this creature. This is set to 10 if no value is provided.
+int | The Intelligence attribute associated with this creature. This is set to 10 if no value is provided.
+wis | The Wisdom attribute associated with this creature. This is set to 10 if no value is provided.
+chr | The Charisma attribute associated with this creature. This is set to 10 if no value is provided.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/raveious/DnD-character-sheets/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+list of all monster fields
 
-### Support or Contact
+Field | Description
+:--- | :---:
+name | Creature's name
+class | Creature's class
+level | Current creatures level
+hp | Creature's hit points
+sex | Creature's gender
+race | Creature's race
+alignment | Creature's alignment
+ac | Armour Class
+str | The Strength attribute associated with this creature. This is set to 8 if no value is provided.
+dex | The Dexterity attribute associated with this creature. This is set to 8 if no value is provided.
+con | The Constitution attribute associated with this creature. This is set to 8 if no value is provided.
+int | The Intelligence attribute associated with this creature. This is set to 8 if no value is provided.
+wis | The Wisdom attribute associated with this creature. This is set to 8 if no value is provided.
+chr | The Charisma attribute associated with this creature. This is set to 8 if no value is provided.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Docker Development
+
+Included is a Docker Compose file to make setup of a development environment as easy as `docker-compose up`. The image that used is one that was built to do development on Github Pages sites easy, [jekyll-website](https://hub.docker.com/r/raveious/jekyll-website/).

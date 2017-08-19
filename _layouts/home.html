@@ -26,7 +26,7 @@
       <header>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <h1>{{ site.title | default: site.github.repository_name }}</h1>
+            <h1>{{ site.title | default: site.github.repository_name | replace: "-", " " }}</h1>
             <h2>{{ site.description | default: site.github.project_tagline }}</h2>
           </span>
           <span class="left-tail"></span>
@@ -50,6 +50,8 @@
       <span class="banner-fix"></span>
 
       <section id="main_content">
+        {{ content }}
+
         {% assign character_classes = site.characters | map: "class" | sort %}
         {% unless character_classes == empty %}
         <h1>Characters</h1>
@@ -69,7 +71,7 @@
         {% unless monster_races == empty %}
           <h1>Monsters</h1>
           {% for m_race in monster_races %}
-            <h2>{{ m_race | captitalize }}</h2>
+            <h2>{{ m_race | capitalize }}</h2>
             <ul>
             {% for m in site.monsters %}
               {% if m.race == m_race %}
