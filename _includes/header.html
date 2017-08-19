@@ -27,7 +27,7 @@
           <span class="ribbon-outer">
             <span class="ribbon-inner">
               <h1>{{ page.name | remove: ".md" | replace: "_", " " | replace: "-", " " | capitalize}}</h1>
-              <h2>Level {{ page.level | default: "1"}} {{ page.class | default: page.layout | camelcase | capitalize }}</h2>
+              <h2>Level {{ page.level }} {{ page.race | camelcase | capitalize }} {{ page.class | default: page.layout | camelcase | capitalize }}</h2>
             </span>
             <span class="left-tail"></span>
             <span class="right-tail"></span>

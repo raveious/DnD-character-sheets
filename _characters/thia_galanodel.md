@@ -1,5 +1,5 @@
 ---
-layout: character
+name: "Thia Galanodel"
 class: bard
 level: 5
 hp: 42

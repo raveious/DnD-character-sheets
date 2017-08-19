@@ -12,3 +12,30 @@ collections:
 
 exclude:
   - "docker-compose.yml"
+
+defaults:
+  - scope:
+      path: ""
+      type: "characters"
+    values:
+      layout: "character"
+      race: "human"
+      level: 1
+      str: 10
+      dex: 10
+      con: 10
+      int: 10
+      wis: 10
+      chr: 10
+  - scope:
+      path: ""
+      type: "monsters"
+    values:
+      layout: "monster"
+      level: 1
+      str: 8
+      dex: 8
+      con: 8
+      int: 8
+      wis: 8
+      chr: 8
