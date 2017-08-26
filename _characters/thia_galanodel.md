@@ -1,7 +1,7 @@
 ---
 name: "Thia Galanodel"
 class: bard
-level: 5
+level: 6
 hp: 42
 sex: Female
 race: Half-Elf
@@ -25,6 +25,15 @@ You've learned how to use your wit to distract, confuse, and otherwise sap the c
 When a creatare that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll.
 You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage.
 The creature is immune if it can't hear you or if it's immune to being charmed.
+
+### Countercharm
+
+At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects.
+As an action, you can slart a perfomance that lasts until the end of your next turn.
+During that time, you and any friendly creatures within 30 feet of you have advantage
+on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit.
+
+The performance ends early if you are incapacitated, silenced or if you voluntarily end it (no action required).
 
 # Traits
 
@@ -98,6 +107,12 @@ You regain your expended luck points when you finish a long rest.
 
 ## Cantrips
 
+Character Level | Cantrips Known
+:---: | :---:
+1-3 | 2
+4-9 | 3
+10-20 | 4
+
 ### Blade Ward
 *Abjuration cantrip*
 
@@ -140,7 +155,7 @@ This spell can physically repair a magic item or construct, but the spell can't 
 **Duration:** Concentration, up to 1 minute
 
 You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration.
-You can also combine the four Iights into one glowing vaguely humanoid form of Medium size.
+You can also combine the four lights into one glowing vaguely humanoid form of Medium size.
 Whichever form you choose, each light sheds dim light in a 10-foot radius.
 
 As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range.
@@ -189,6 +204,12 @@ This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level 
 
 ## Level 1 Spells
 
+Character Level | Level 1 Spell Slots
+:---: | :---:
+1 | 2
+2 | 3
+3-20 | 4
+
 ### Faerie Fire
 *1st-level evocation*
 
@@ -221,7 +242,7 @@ Any attack roll against an affected creature or object has advantage if the atta
 
 A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 
-> **At Higher Levels.**
+> **At Higher Levels:**
 > When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.
 
 ### Healing Word
@@ -238,7 +259,7 @@ A creature you touch regains a number of hit points equal to 1d8 + your spellcas
 A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier.
 This spell has no effect on undead or constructs.
 
-> **At Higher Levels.**
+> **At Higher Levels:**
 > When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.
 
 ### Thunder Wave
@@ -259,7 +280,7 @@ On a successful save, the creature takes half as much damage and isn't pushed.
 
 In addition, unsecured objeets that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.
 
-> **At Higher Levels.**
+> **At Higher Levels:**
 > When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.
 
 ### Comprehend Languages
@@ -302,6 +323,12 @@ To discern that you are disguised, a creature can use its action to inspect your
 
 ## Level 2 Spells
 
+Character Level | Level 2 Spell Slots
+:---: | :---:
+1-2 | 0
+3 | 2
+4-20 | 3
+
 ### Enhance Ability
 *2nd-level transmutation*
 
@@ -323,7 +350,7 @@ Choose one of the following effects; the target gains that effect until the spel
 - **Fox's Cunning.** The target has advantage on Intelligence checks.
 - **Owl's Wisdom.** The target has advantage on Wisdom checks.
 
-> **At Higher Levels.**
+> **At Higher Levels:**
 > When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
 
 ### Shatter
@@ -344,10 +371,16 @@ A creature made of inorganic material such as stone, crystal, or metal has disad
 
 A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.
 
-> **At Higher Levels.**
+> **At Higher Levels:**
 > When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
 
 ## Level 3 Spells
+
+Character Level | Level 3 Spell Slots
+:---: | :---:
+1-4 | 0
+5 | 2
+6-20 | 3
 
 ### Bestow Curse
 *3rd-level necromancy*
@@ -372,9 +405,34 @@ A remove curse spell ends this effect.
 At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above.
 The DM has final say on such a curse's effect.
 
-> **At Higher Levels.**
+> **At Higher Levels:**
 > - If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes.
 > - If you use a spell slot of 5th level or higher, the duration is 8 hours.
 > - If you use a spell slot of 7th level or higher, the duration is 24 hours.
 > - If you use a 9th level spell slot, the spell lasts until it is dispelled.
 > - Using a spell slot of 5th level or higher grants a duration that doesn't require concentration.
+
+### Dispell Magic
+*3rd-level abjuration*
+
+**Casting Time:** 1 action
+
+**Range:** 120 feet
+
+**Components:** V,S
+
+**Duration:** Instantaneous
+
+Choose one creature, object, or magical effect within
+range. Any spell of 3rd level or lower on the target ends.
+
+For each spell of 4th level or higher on the target. Make
+an ability check using your spellcasting ability. The
+DC equals 10 + the spell's level. On a successful check,
+the spell ends.
+
+> **At Higher Levels:**
+> When you cast this spell using a spell slot of 4th level or
+> higher, you automatically end the effects of a spell on the
+> target if the spell's level is equal to or less than the
+> level of the spell slot you used.
