@@ -12,7 +12,7 @@ dex: 16
 con: 16
 int: 12
 wis: 10
-chr: 18
+cha: 18
 ---
 
 # History

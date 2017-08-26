@@ -31,7 +31,7 @@ dex | The Dexterity attribute associated with this creature. This is set to 10 i
 con | The Constitution attribute associated with this creature. This is set to 10 if no value is provided.
 int | The Intelligence attribute associated with this creature. This is set to 10 if no value is provided.
 wis | The Wisdom attribute associated with this creature. This is set to 10 if no value is provided.
-chr | The Charisma attribute associated with this creature. This is set to 10 if no value is provided.
+cha | The Charisma attribute associated with this creature. This is set to 10 if no value is provided.
 
 list of all monster fields
 
@@ -50,7 +50,7 @@ dex | The Dexterity attribute associated with this creature. This is set to 8 if
 con | The Constitution attribute associated with this creature. This is set to 8 if no value is provided.
 int | The Intelligence attribute associated with this creature. This is set to 8 if no value is provided.
 wis | The Wisdom attribute associated with this creature. This is set to 8 if no value is provided.
-chr | The Charisma attribute associated with this creature. This is set to 8 if no value is provided.
+cha | The Charisma attribute associated with this creature. This is set to 8 if no value is provided.
 
 ## Docker Development
 
