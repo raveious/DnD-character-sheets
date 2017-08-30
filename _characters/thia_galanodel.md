@@ -22,14 +22,14 @@ cha: 18
 ### Cutting Words
 
 You've learned how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others.
-When a creatare that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll.
+When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll.
 You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage.
 The creature is immune if it can't hear you or if it's immune to being charmed.
 
 ### Countercharm
 
 At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects.
-As an action, you can slart a perfomance that lasts until the end of your next turn.
+As an action, you can start a performance that lasts until the end of your next turn.
 During that time, you and any friendly creatures within 30 feet of you have advantage
 on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit.
 
@@ -161,7 +161,7 @@ Whichever form you choose, each light sheds dim light in a 10-foot radius.
 As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range.
 A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.
 
-> This spell was aquired through the Magic Initiate feat.
+> This spell was acquired through the Magic Initiate feat.
 
 ### Mage Hand
 *Conjuration cantrip*
@@ -184,7 +184,7 @@ You can move the hand up to 30 feet each time you use it.
 
 The hand can't attack, activate magic items, or carry more than 10 pounds.
 
-> This spell was aquired through the Magic Initiate feat.
+> This spell was acquired through the Magic Initiate feat.
 
 ### Vicious Mockery
 *Enchantment cantrip*
@@ -227,7 +227,7 @@ For the duration, objects and affected creatures shed dim light in a 10-foot rad
 
 Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.
 
-> This spell was aquired through the Magic Initiate feat, and can only cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again.
+> This spell was acquired through the Magic Initiate feat, and can only cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again.
 
 ### Cure Wounds
 *1st-level evocation*
@@ -245,23 +245,6 @@ A creature you touch regains a number of hit points equal to 1d8 + your spellcas
 > **At Higher Levels:**
 > When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.
 
-### Healing Word
-*1st-level evocation*
-
-**Casting Time:** 1 bonus action
-
-**Range:** 60 feet
-
-**Components:** V
-
-**Duration:** Instantaneous
-
-A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier.
-This spell has no effect on undead or constructs.
-
-> **At Higher Levels:**
-> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.
-
 ### Thunder Wave
 *1st-level evocation*
 
@@ -278,7 +261,7 @@ Each creature in a 15-foot cube originating from you must make a Constitution sa
 On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you.
 On a successful save, the creature takes half as much damage and isn't pushed.
 
-In addition, unsecured objeets that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.
+In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.
 
 > **At Higher Levels:**
 > When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.
@@ -312,7 +295,7 @@ This spell doesn't decode secret messages in a text or a glyph, such as an arcan
 **Duration:** 1 hour
 
 You make yourself - including your clothing, armor, weapons, and other belongings on your person - look different until the spell ends or until you use your action to dismiss it.
-You can seem 1 foot shorter or taller and can appear thin, fat, or in belween.
+You can seem 1 foot shorter or taller and can appear thin, fat, or in between.
 You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs.
 Otherwise, the extent of the illusion is up to you.
 
@@ -343,7 +326,7 @@ Character Level | Level 2 Spell Slots
 You touch a creature and bestow upon it a magical enhancement.
 Choose one of the following effects; the target gains that effect until the spell ends.
 
-- **Bear's Endurance.** The target has advantage on Constitution checks. lt also gains 2d6 temporary hit points, which are lost when the spell ends.
+- **Bear's Endurance.** The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.
 - **Bull's Strength.** The target has advantage on Strength checks, and his or her carrying capacity doubles.
 - **Cat's Grace.** The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.
 - **Eagle's Splendor.** The target has advantage on Charisma checks.
@@ -369,7 +352,7 @@ Each creature in a 10-foot-radius sphere centered on that point must make a Cons
 A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one.
 A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.
 
-A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.
+A non-magical object that isn't being worn or carried also takes the damage if it's in the spell's area.
 
 > **At Higher Levels:**
 > When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
@@ -412,7 +395,7 @@ The DM has final say on such a curse's effect.
 > - If you use a 9th level spell slot, the spell lasts until it is dispelled.
 > - Using a spell slot of 5th level or higher grants a duration that doesn't require concentration.
 
-### Dispell Magic
+### Dispel Magic
 *3rd-level abjuration*
 
 **Casting Time:** 1 action
@@ -436,3 +419,63 @@ the spell ends.
 > higher, you automatically end the effects of a spell on the
 > target if the spell's level is equal to or less than the
 > level of the spell slot you used.
+
+### Remove Curse
+*3rd-level abjuration*
+
+**Casting Time:** 1 action
+
+**Range:** Touch
+
+**Components:** V, S
+
+**Duration:** Instantaneous
+
+At your touch, all curses affecting one creature or
+object end. If the object is a cursed magic item, its curse
+remains, but the spell breaks its owner's attunement to
+the object so it can be removed or discarded.
+
+### Mass Healing Word
+*3rd-level evocation*
+
+**Casting Time:** 1 bonus action
+
+**Range:** 60 feet
+
+**Components:** V
+
+**Duration:** Instantaneous
+
+As you call out words of restoration, up to six creatures
+of your choice that you can see within range regain hit
+points equal to 1d4 + your spellcasting ability modifier.
+This spell has no effect on undead or constructs.
+
+> **At Higher Levels:**
+> When you cast this spell using a spell slot of 4th level or higher, the
+> healing increases by 1d4 for each slot level above 3rd.
+
+### Hunger of Hadar
+*3rd-level conjuration*
+
+**Casting Time:** 1 action
+
+**Range:** 150 feet
+
+**Components:** V, S, M (a pickled octopus tentacle)
+
+**Duration:** Concentration, up to 1 minute
+
+You open a gateway to the dark between the stars, a region infested with unknown
+horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered
+on a point with range and lasting for the duration. This void is filled with a
+cacophony of soft whispers and slurping noises that can be heard up to 30 feet
+away. No light, magical or otherwise, can illuminate the area, and creatures
+fully within the area are blinded.
+
+The void creates a warp in the fabric of space, and the area is difficult
+terrain. Any creature that starts its turn in the area takes 2d6 cold damage.
+Any creature that ends its turn in the area must succeed on a Dexterity
+saving throw or take 2d6 acid damage as milky, otherworldly tentacles rub
+against it.
