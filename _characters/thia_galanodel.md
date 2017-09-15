@@ -1,12 +1,12 @@
 ---
 name: "Thia Galanodel"
 class: bard
-level: 6
-hp: 42
+level: 7
+hp: 51
 sex: Female
 race: Half-Elf
 alignment: CG
-ac: 15
+ac: 16
 str: 15
 dex: 16
 con: 16
@@ -15,7 +15,58 @@ wis: 10
 cha: 18
 ---
 
+# Notable Inventory
+
+## Weapons
+
+- Silver Dagger
+- Rapier
+- +1 Long Sword
+  - Requires attunement
+  - Undead Slayer - 3d6 Radiant Damage to Undead
+- +2 Long Sword - Kindness
+  - Requires attunement
+  - An elven designed longsword, enchanted with life from a previous owner. It's mission, to protect the user and make their desires a reality.
+  - When a 16 - 20 is rolled, the sword gains a charge ( it can hold 5 max). Each charge can be expended on a confirmed hit to cause 1d6 fire damage to the target, at the decision of the sword. If it kills an enemy, it gains 3 charges immediately.
+  - The sword is intelligent and can communicate with the user via telepathy and by speaking ( up to 120 feet): It speaks and can read all languages you speak.
+
+## Wearables
+
+- Master work leatherwork armor
+  - Initial Armor Class: {{ page.dex | minus: 10 | divided_by: 2 | plus: 12 }}
+- Ring of Protection
+  - +1 to AC
+
+## Potions
+
+- 2x Cure Greater Wounds
+  - 4d4 + 4 of health
+- 1x Potion of Fire resistance
+- 1x Potion of Fire breath
+
+## Misc.
+
+- Bag of Holding
+  - Holds up to 500 LBs
+  - 64 ft^3
+  - Item recall on thought
+- Wardens of the Hunt Guild badge
+
 # History
+
+<!-- ## Back Story
+
+### Personal Traits
+
+### Ideals
+
+### Bonds
+
+### Flaws
+
+## Affiliations
+
+### Wardens of the Hunt -->
 
 ## College of Lore
 
@@ -35,7 +86,7 @@ on saving throws against being frightened or charmed. A creature must be able to
 
 The performance ends early if you are incapacitated, silenced or if you voluntarily end it (no action required).
 
-# Traits
+# Character Traits
 
 ## Darkvision
 
@@ -198,7 +249,7 @@ The hand can't attack, activate magic items, or carry more than 10 pounds.
 **Duration:** Instantaneous
 
 You unleash a string of insults laced with subtle enchantments at a creature you can see within range.
-lf the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.
+If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.
 
 This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).
 
@@ -402,7 +453,7 @@ The DM has final say on such a curse's effect.
 
 **Range:** 120 feet
 
-**Components:** V,S
+**Components:** V, S
 
 **Duration:** Instantaneous
 
@@ -456,26 +507,118 @@ This spell has no effect on undead or constructs.
 > When you cast this spell using a spell slot of 4th level or higher, the
 > healing increases by 1d4 for each slot level above 3rd.
 
-### Hunger of Hadar
-*3rd-level conjuration*
+### Counterspell
+*3rd-level abjuration*
+
+**Casting Time:** 1 reaction, which you take when you see a creature within 60 feet of you casting a spell
+
+**Range:** 60 feet
+
+**Components:** S
+
+**Duration:** Instantaneous
+
+You attempt to interrupt a creature in the process of casting a spell.
+If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect.
+If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability.
+The DC equals 10 + the spell's level.
+On a success, the creature's spell fails and has no effect.
+
+> **At Higher Levels:**
+> When you cast this spell using a spell slot of 4th level or higher,
+> the interrupted spell has no effect if its level is less than or equal
+> to the level of the spell slot you used.
+
+## Level 4 Spells
+
+Character Level | Level 4 Spell Slots
+:---: | :---:
+1-6 | 0
+7 | 1
+8 | 2
+9-20 | 3
+
+### Polymorph
+*4th-level transmutation*
 
 **Casting Time:** 1 action
 
-**Range:** 150 feet
+**Range:** 60 feet
 
-**Components:** V, S, M (a pickled octopus tentacle)
+**Components:** V, S, M (a caterpillar cocoon)
 
-**Duration:** Concentration, up to 1 minute
+**Duration:** Concentration, up to 1 hour
 
-You open a gateway to the dark between the stars, a region infested with unknown
-horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered
-on a point with range and lasting for the duration. This void is filled with a
-cacophony of soft whispers and slurping noises that can be heard up to 30 feet
-away. No light, magical or otherwise, can illuminate the area, and creatures
-fully within the area are blinded.
+This spell transforms a creature that you can see
+within range into a new form. An unwilling creature
+must make a Wisdom saving throw to avoid the
+effect. A shape changer automatically succeeds on this
+saving throw.
 
-The void creates a warp in the fabric of space, and the area is difficult
-terrain. Any creature that starts its turn in the area takes 2d6 cold damage.
-Any creature that ends its turn in the area must succeed on a Dexterity
-saving throw or take 2d6 acid damage as milky, otherworldly tentacles rub
-against it.
+The transformation lasts for the duration, or until
+the target drops to zero hit points or dies. The new form
+can be any beast whose challenge rating is equal to or
+less than the target's (or the target's level, if it doesn't
+have a challenge rating). The target's game statistics,
+including mental ability scores, are replaced by the
+statistics of the chosen beast. It retains its alignment
+and personality.
+
+The target assumes the hit points of its new form.
+When it reverts to its normal form, the creature
+returns to the number of hit points it had before it
+transformed. If it reverts as a result of dropping to
+zero hit points, any excess damage carries over to its
+normal form. As long as the excess damage doesn't
+reduce the creature's normal form to zero hit points, it isn't
+knocked unconscious.
+
+The creature is limited in the actions it can perform by
+the nature of its new form, and it can't speak, cast spells,
+or take any other action that requires hands or speech.
+
+The target's gear melds into the new form. The
+creature can't activate, use, wield, or otherwise benefit
+from any of its equipment.
+
+<!--
+## Level 5 Spells
+
+Character Level | Level 5 Spell Slots
+:---: | :---:
+1-8 | 0
+9 | 1
+10-17 | 2
+18-20 | 3
+
+## Level 6 Spells
+
+Character Level | Level 6 Spell Slots
+:---: | :---:
+1-10 | 0
+11-18 | 1
+19-20 | 2
+
+## Level 7 Spells
+
+Character Level | Level 7 Spell Slots
+:---: | :---:
+1-12 | 0
+13-19 | 1
+20 | 2
+
+## Level 8 Spells
+
+Character Level | Level 8 Spell Slots
+:---: | :---:
+1-14 | 0
+15-20 | 1
+
+## Level 9 Spells
+
+Character Level | Level 8 Spell Slots
+:---: | :---:
+1-16 | 0
+17-20 | 1
+
+-->

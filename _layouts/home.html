@@ -52,7 +52,7 @@
       <section id="main_content">
         {{ content }}
 
-        {% assign character_classes = site.characters | map: "class" | sort %}
+        {% assign character_classes = site.characters | map: "class" | uniq | sort %}
         {% unless character_classes == empty %}
         <h1>Characters</h1>
         {% for c_class in character_classes %}
@@ -67,14 +67,14 @@
         {% endfor %}
         {% endunless %}
 
-        {% assign monster_races = site.monsters | map: "race" | sort %}
-        {% unless monster_races == empty %}
+        {% assign monster_classes = site.monsters | map: "class" | uniq | sort %}
+        {% unless monster_classes == empty %}
           <h1>Monsters</h1>
-          {% for m_race in monster_races %}
-            <h2>{{ m_race | capitalize }}</h2>
+          {% for m_class in monster_classes %}
+            <h2>{{ m_class | capitalize }}</h2>
             <ul>
             {% for m in site.monsters %}
-              {% if m.race == m_race %}
+              {% if m.class == m_class %}
                 <li><a href="{{ m.url | prepend: site.baseurl  }}">{{ m.name }}</a></li>
               {% endif %}
             {% endfor %}
