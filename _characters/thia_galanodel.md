@@ -27,8 +27,8 @@ cha: 18
 - +2 Long Sword - Kindness
   - Requires attunement
   - An elven designed longsword, enchanted with life from a previous owner. It's mission, to protect the user and make their desires a reality.
-  - When a 16 - 20 is rolled, the sword gains a charge ( it can hold 5 max). Each charge can be expended on a confirmed hit to cause 1d6 fire damage to the target, at the decision of the sword. If it kills an enemy, it gains 3 charges immediately.
-  - The sword is intelligent and can communicate with the user via telepathy and by speaking ( up to 120 feet): It speaks and can read all languages you speak.
+  - When a natural 16 - 20 is rolled, the sword gains a charge (it can hold 5 max). Each charge can be expended on a confirmed hit to cause 1d6 fire damage to the target, at the decision of the sword. If it kills an enemy, it gains 3 charges immediately.
+  - The sword is intelligent and can communicate with the user via telepathy and by speaking ( up to 120 feet ): It speaks and can read all languages you speak.
 
 ## Wearables
 

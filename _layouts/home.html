@@ -52,6 +52,21 @@
       <section id="main_content">
         {{ content }}
 
+        {% assign weapon_types = site.weapons | map: "weapon" | uniq | sort %}
+        {% unless weapon_types == empty %}
+        <h1>Unique Weapons</h1>
+        {% for weapon in weapon_types %}
+          <h2>{{ weapon | capitalize }}s</h2>
+          <ul>
+          {% for w in site.weapons %}
+            {% if w.weapon == weapon %}
+              <li><a href="{{ w.url | prepend: site.baseurl }}">{{ w.name }}</a></li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        {% endfor %}
+        {% endunless %}
+
         {% assign character_classes = site.characters | map: "class" | uniq | sort %}
         {% unless character_classes == empty %}
         <h1>Characters</h1>

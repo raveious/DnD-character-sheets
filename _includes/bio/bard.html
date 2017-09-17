@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+{% assign jack_of_all_trades = proficiency | divided_by: 2 %}
+
+{% include saves.html
+  str=jack_of_all_trades
+  dex=proficiency
+  con=jack_of_all_trades
+  int=jack_of_all_trades
+  wis=jack_of_all_trades
+  cha=proficiency
+  %}
+
+{% include skills.html %}
+
+</html>

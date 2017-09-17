@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<table>
+  <thead>
+  </thead>
+
+  <tbody>
+    <tr><td>Acrobatics (Dex)</td><td>{{ page.dex | minus: 10 | divided_by: 2 | plus: include.acrobatics | default: 0 }}</td></tr>
+    <tr><td>Animal Handling (Wis)</td><td>{{ page.wis | minus: 10 | divided_by: 2 | plus: include.animal_handling | default: 0 }}</td></tr>
+    <tr><td>Arcana (Int)</td><td>{{ page.int | minus: 10 | divided_by: 2 | plus: include.arcana | default: 0 }}</td></tr>
+    <tr><td>Athletics (Str)</td><td>{{ page.str | minus: 10 | divided_by: 2 | plus: include.athletics | default: 0 }}</td></tr>
+    <tr><td>Deception (Cha)</td><td>{{ page.cha | minus: 10 | divided_by: 2 | plus: include.deception | default: 0 }}</td></tr>
+    <tr><td>History (Int)</td><td>{{ page.int | minus: 10 | divided_by: 2 | plus: include.history | default: 0 }}</td></tr>
+    <tr><td>Insight (Wis)</td><td>{{ page.wis | minus: 10 | divided_by: 2 | plus: include.insight | default: 0 }}</td></tr>
+    <tr><td>Intimidation (Cha)</td><td>{{ page.cha | minus: 10 | divided_by: 2 | plus: include.intimidation | default: 0 }}</td></tr>
+    <tr><td>Investigation (Int)<td>{{ page.int | minus: 10 | divided_by: 2 | plus: include.investigation | default: 0 }}</td></tr>
+    <tr><td>Medicine (Wis)</td><td>{{ page.wis | minus: 10 | divided_by: 2 | plus: include.medicine | default: 0 }}</td></tr>
+    <tr><td>Nature (Int)</td><td>{{ page.int | minus: 10 | divided_by: 2 | plus: include.nature | default: 0 }}</td></tr>
+    <tr><td>Perception (Wis)</td><td>{{ page.wis | minus: 10 | divided_by: 2 | plus: include.perception | default: 0 }}</td></tr>
+    <tr><td>Performance (Cha)</td><td>{{ page.cha | minus: 10 | divided_by: 2 | plus: include.performance | default: 0 }}</td></tr>
+    <tr><td>Persuasion (Cha)</td><td>{{ page.cha | minus: 10 | divided_by: 2 | plus: include.persuasion | default: 0 }}</td></tr>
+    <tr><td>Religion (Int)</td><td>{{ page.int | minus: 10 | divided_by: 2 | plus: include.religion | default: 0 }}</td></tr>
+    <tr><td>Sleight of Hand (Dex)</td><td>{{ page.dex | minus: 10 | divided_by: 2 | plus: include.sleight_of_hand | default: 0 }}</td></tr>
+    <tr><td>Stealth (Dex)</td><td>{{ page.dex | minus: 10 | divided_by: 2 | plus: include.stealth | default: 0 }}</td></tr>
+    <tr><td>Survival (Wis)</td><td>{{ page.wis | minus: 10 | divided_by: 2 | plus: include.survival | default: 0 }}</td></tr>
+  </tbody>
+</table>
+</html>

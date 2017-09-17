@@ -9,6 +9,8 @@ collections:
     output: true
   monsters:
     output: true
+  weapons:
+    output: true
 
 exclude:
   - "docker-compose.yml"
@@ -39,3 +41,8 @@ defaults:
       int: 8
       wis: 8
       cha: 8
+  - scope:
+      path: ""
+      type: "weapons"
+    values:
+      layout: "weapon"
