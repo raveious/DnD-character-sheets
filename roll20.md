@@ -219,3 +219,11 @@ floor(#prof_bonus / 2)
 **Taking a hit die for points of health**
 /roll d8 + #const_mod + #jack_of_all_trades
 ```
+
+### Cure Wounds Potions
+```
+?{Health Potion|
+   Cure Light Wounds, **Cure Light Wounds Potion** I regain [[2d4+2]] HP. |
+   Cure Greater Wounds, **Cure Greater Wounds** I regain [[4d4+4]] HP.
+}
+```

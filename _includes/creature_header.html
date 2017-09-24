@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen">
+    <link rel="stylesheet" href="{{ '/assets/css/mobile.css' | relative_url }}" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="{{ '/assets/css/non-screen.css' | relative_url }}" media="handheld, only screen and (max-device-width:640px)">
+
+    <script type="text/javascript" src="{{ '/assets/js/modernizr.js' | relative_url }}"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ '/assets/js/headsmart.min.js' | relative_url }}"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>{{ page.name | remove: ".md" | replace: "_", " " | replace: "-", " " | capitalize }} by {{ site.github.owner_name }}</title>
+  </head>
+
+    <body>
+      <div class="shell">
+
+        <header>
+          <span class="ribbon-outer">
+            <span class="ribbon-inner">
+              <h1>{{ page.name | remove: ".md" | replace: "_", " " | replace: "-", " " | capitalize}}</h1>
+              <h2>Level {{ page.level }} {{ page.race | camelcase | capitalize }} {{ page.class | camelcase | capitalize }}</h2>
+            </span>
+            <span class="left-tail"></span>
+            <span class="right-tail"></span>
+          </span>
+        </header>
+        <div id="attribute-banner">
+          <span id="attributes">
+            <span class="stat">Str: {{ page.str }} ({{ page.str | minus: 10 | divided_by: 2 }})</span>
+            <span class="stat">Dex: {{ page.dex }} ({{ page.dex | minus: 10 | divided_by: 2 }})</span>
+            <span class="stat">Con: {{ page.con }} ({{ page.con | minus: 10 | divided_by: 2 }})</span>
+            <span class="stat">Int: {{ page.int }} ({{ page.int | minus: 10 | divided_by: 2 }})</span>
+            <span class="stat">Wis: {{ page.wis }} ({{ page.wis | minus: 10 | divided_by: 2 }})</span>
+            <span class="stat">Cha: {{ page.cha }} ({{ page.cha | minus: 10 | divided_by: 2 }})</span>
+          </span>
+        </div>
+      <span class="banner-fix"></span>
+</html>

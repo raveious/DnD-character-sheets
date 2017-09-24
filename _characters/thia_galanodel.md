@@ -1,18 +1,26 @@
 ---
-name: "Thia Galanodel"
+name: Thia Galanodel
 class: bard
 level: 7
 hp: 51
 sex: Female
 race: Half-Elf
 alignment: CG
-ac: 16
+ac: 18
 str: 15
 dex: 16
 con: 16
 int: 12
 wis: 10
 cha: 18
+proficiencies:
+  - deception
+  - history
+  - insight
+  - perception
+  - persuasion
+  - sleight of hand
+  - survival
 ---
 
 # Notable Inventory
@@ -24,11 +32,6 @@ cha: 18
 - +1 Long Sword
   - Requires attunement
   - Undead Slayer - 3d6 Radiant Damage to Undead
-- +2 Long Sword - Kindness
-  - Requires attunement
-  - An elven designed longsword, enchanted with life from a previous owner. It's mission, to protect the user and make their desires a reality.
-  - When a natural 16 - 20 is rolled, the sword gains a charge (it can hold 5 max). Each charge can be expended on a confirmed hit to cause 1d6 fire damage to the target, at the decision of the sword. If it kills an enemy, it gains 3 charges immediately.
-  - The sword is intelligent and can communicate with the user via telepathy and by speaking ( up to 120 feet ): It speaks and can read all languages you speak.
 
 ## Wearables
 
@@ -36,13 +39,18 @@ cha: 18
   - Initial Armor Class: {{ page.dex | minus: 10 | divided_by: 2 | plus: 12 }}
 - Ring of Protection
   - +1 to AC
+- Boots of Speed
+  - Requires attunement
+  - Using a bonus action, the wearer can double their movement speed. Opponents that get attacks of opportunity against you, have disadvantage when attacking you.
+- Bracers of Defense
+  - Requires attunement
+  - +2 to AC
 
 ## Potions
 
-- 2x Cure Greater Wounds
+- 8x Cure Greater Wounds
   - 4d4 + 4 of health
 - 1x Potion of Fire resistance
-- 1x Potion of Fire breath
 
 ## Misc.
 
@@ -51,22 +59,34 @@ cha: 18
   - 64 ft^3
   - Item recall on thought
 - Wardens of the Hunt Guild badge
+- Kindness *now broken*
+  - All that remains is the handle, the guard, and a couple of inches of the former blade.
 
 # History
 
-<!-- ## Back Story
+## Back Story
+*Details coming soon...*
 
 ### Personal Traits
+Has learned lessons for every situation, drawn from observing nature.
 
 ### Ideals
+Fights for the greater good and for the needs of the many.
 
 ### Bonds
+Strong bonds to the unspoiled wilderness
 
 ### Flaws
+Resents anyone and everyone who has ever wronged me, and will even go to the extents of killing them to exact my revenge.
 
 ## Affiliations
 
-### Wardens of the Hunt -->
+### Wardens of the Hunt
+
+#### Wardens of the North
+Traveling party of a few fellows that were previously prisoners.
+
+*More details coming soon...*
 
 ## College of Lore
 
@@ -88,7 +108,7 @@ The performance ends early if you are incapacitated, silenced or if you voluntar
 
 # Character Traits
 
-## Darkvision
+## Dark vision
 
 Thanks to your elf blood, you have superior vision in dark and dim conditions.
 You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.
