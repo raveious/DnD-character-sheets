@@ -1,18 +1,36 @@
-- Acrobatics
-- Animal Handling
-- Arcana
-- Athletics
-- Deception
-- History
-- Insight
-- Intimidation
-- Investigation
-- Medicine
-- Nature
-- Perception
-- Performance
-- Persuasion
-- Religion
-- Sleight of Hand
-- Stealth
-- Survival
+- name: Acrobatics
+  type: dex
+- name: Animal Handling
+  type: wis
+- name: Arcana
+  type: int
+- name: Athletics
+  type: str
+- name: Deception
+  type: cha
+- name: History
+  type: int
+- name: Insight
+  type: wis
+- name: Intimidation
+  type: cha
+- name: Investigation
+  type: int
+- name: Medicine
+  type: wis
+- name: Nature
+  type: int
+- name: Perception
+  type: wis
+- name: Performance
+  type: cha
+- name: Persuasion
+  type: cha
+- name: Religion
+  type: int
+- name: Sleight of Hand
+  type: dex
+- name: Stealth
+  type: dex
+- name: Survival
+  type: wis

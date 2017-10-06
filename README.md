@@ -32,6 +32,7 @@ con | The Constitution attribute associated with this creature. This is set to 1
 int | The Intelligence attribute associated with this creature. This is set to 10 if no value is provided.
 wis | The Wisdom attribute associated with this creature. This is set to 10 if no value is provided.
 cha | The Charisma attribute associated with this creature. This is set to 10 if no value is provided.
+proficiencies | list of all the skills your character is proficient in. Refer to [this list](_data/proficiencies.yml) for proper cast sensitive strings.
 
 list of all monster fields
 

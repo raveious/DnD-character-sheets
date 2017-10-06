@@ -14,13 +14,13 @@ int: 12
 wis: 10
 cha: 18
 proficiencies:
-  - deception
-  - history
-  - insight
-  - perception
-  - persuasion
-  - sleight of hand
-  - survival
+  - Deception
+  - History
+  - Insight
+  - Perception
+  - Persuasion
+  - Sleight of Hand
+  - Survival
 ---
 
 # Notable Inventory
@@ -59,19 +59,25 @@ proficiencies:
   - 64 ft^3
   - Item recall on thought
 - Wardens of the Hunt Guild badge
-- Kindness *now broken*
+- Kindness (*now broken*)
   - All that remains is the handle, the guard, and a couple of inches of the former blade.
 
 # History
 
 ## Back Story
-*Details coming soon...*
+Thia is from a once flourishing Elven city, with no crime, war, poverty or disease in a very distant land. Since then, the city was attacked by an army of the undead and it's master(s). Now the city no longer resembles what it once did and no longer shows itself and any recent maps.
+
+She is from a great noble house, know for their honor, resolve and magical power. The head of the house, before the city was destroyed, was Thia's mother and was known for being very kind and whole hearted kindness, but merciless when it counts.
+
+Another person who survived, was the head of the houses guard. Who saved Thia was the disaster in the first place, but was separated from here some time later. Thia has little memory of this as she was rather young when the everything happened (7-9 years old)
+
+Thia's father was out of the city at the time as he traveled a lot. Once he got word that the city was attacked, he returned to find his girl missing and began to look for her. He has not seen his girl since she was a very small child, so it's going to quite challenging to find her.
 
 ### Personal Traits
 Has learned lessons for every situation, drawn from observing nature.
 
 ### Ideals
-Fights for the greater good and for the needs of the many.
+Fights for the greater good and for the needs of the many. She trying to find a sense of purpose, and aspires to restore the greatness of her formal house.
 
 ### Bonds
 Strong bonds to the unspoiled wilderness
@@ -86,7 +92,8 @@ Resents anyone and everyone who has ever wronged me, and will even go to the ext
 #### Wardens of the North
 Traveling party of a few fellows that were previously prisoners.
 
-*More details coming soon...*
+### Falcons Hollow
+Was in Falcon's Hollow originally to trade trapped animals for other items before the game started.
 
 ## College of Lore
 
@@ -125,14 +132,14 @@ To do so, you use a bonus action on your turn to choose one creature other than 
 That creature gains one Bardic inspiration die, a d6.
 
 Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes.
-The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds ar fails.
+The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails.
 Once the Bardic Inspiration die is rolled, it is lost.
 A creature can have only one Bardic Inspiration die at a time.
 
 You can use this feature a number of times equal to your Charisma modifier (a minimum of once).
 You regain any expended uses when you finish a long rest.
 Your Bardic Inspiration die changes when you reach certain levels in this class.
-The die becomes a d8 at 5th level, a dl0 at 10th level, and a d12 at 15th level.
+The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.
 
 ### Font of Inspiration
 Starting at 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.

@@ -221,6 +221,8 @@ floor(#prof_bonus / 2)
 ```
 
 ### Cure Wounds Potions
+This macro prompts the user what kind of cure wounds potion that would like to use, and then rolls the appropriate die.
+
 ```
 ?{Health Potion|
    Cure Light Wounds, **Cure Light Wounds Potion** I regain [[2d4+2]] HP. |
