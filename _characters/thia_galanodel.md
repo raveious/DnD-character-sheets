@@ -6,7 +6,7 @@ hp: 51
 sex: Female
 race: Half-Elf
 alignment: CG
-ac: 18
+ac: 20
 str: 15
 dex: 16
 con: 16
@@ -36,7 +36,8 @@ proficiencies:
 ## Wearables
 
 - Master work leatherwork armor
-  - Initial Armor Class: {{ page.dex | minus: 10 | divided_by: 2 | plus: 12 }}
+  - Initial Armor Class: {{ page.dex | minus: 10 | divided_by: 2 | plus: 14 }}
+  - Squid-like moteef
 - Ring of Protection
   - +1 to AC
 - Boots of Speed
@@ -48,7 +49,7 @@ proficiencies:
 
 ## Potions
 
-- 8x Cure Greater Wounds
+- 8x Greater Potion of Healing
   - 4d4 + 4 of health
 - 1x Potion of Fire resistance
 

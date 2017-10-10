@@ -163,9 +163,27 @@ floor(#prof_bonus / 2)
 /roll 8 + #prof_bonus + #chr_mod
 ```
 
-### Attack Modifier
+### Cure light wounds
 ```
-#chr_mod
+/roll ?{Cast Cure Wounds at what level?}d8 + #spell_mod
+```
+
+### Shatter
+```
+**Casting shatter**
+/roll (?{Casted at level} + 1)d8
+
+*Make targets make a constitution saving throw*
+#spell_save_dc
+```
+
+### Thunder Wave
+```
+**Casting Thunder Wave**
+/roll (?{Casted at level} + 1)d8
+
+*Make targets make a constitution saving throw*
+#spell_save_dc
 ```
 
 ## Saving throws
@@ -220,12 +238,13 @@ floor(#prof_bonus / 2)
 /roll d8 + #const_mod + #jack_of_all_trades
 ```
 
-### Cure Wounds Potions
+### Healing Potions
 This macro prompts the user what kind of cure wounds potion that would like to use, and then rolls the appropriate die.
 
 ```
 ?{Health Potion|
-   Cure Light Wounds, **Cure Light Wounds Potion** I regain [[2d4+2]] HP. |
-   Cure Greater Wounds, **Cure Greater Wounds** I regain [[4d4+4]] HP.
+   Potion of Healing, **Potion of Healing** I regain [[2d4+2]] HP. |
+   Greater Potion of Healing, **Greater Potion of Healing** I regain [[4d4+4]] HP. |
+   Superior Potion of Healing, **Superior Potion of Healing** I regain [[8d4+8]] HP.
 }
 ```
