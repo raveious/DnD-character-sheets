@@ -2,15 +2,16 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 <table>
   <thead>
+    <tr><th colspan="2">Ability Saves</th></tr>
   </thead>
 
   <tbody>
-    <tr><td>Strength</td><td>{{ page.str | minus: 10 | divided_by: 2 | plus: include.str | default: 0 }}</td></tr>
-    <tr><td>Dexterity</td><td>{{ page.dex | minus: 10 | divided_by: 2 | plus: include.dex | default: 0 }}</td></tr>
-    <tr><td>Constitution</td><td>{{ page.con | minus: 10 | divided_by: 2 | plus: include.con | default: 0 }}</td></tr>
-    <tr><td>Intelligence</td><td>{{ page.int | minus: 10 | divided_by: 2 | plus: include.int | default: 0 }}</td></tr>
-    <tr><td>Wisdom</td><td>{{ page.wis | minus: 10 | divided_by: 2 | plus: include.wis | default: 0 }}</td></tr>
-    <tr><td>Charisma</td><td>{{ page.cha | minus: 10 | divided_by: 2 | plus: include.cha | default: 0 }}</td></tr>
+    <tr><td>Strength</td><td align="center">{{ str_mod | plus: include.str | default: 0 }}</td></tr>
+    <tr><td>Dexterity</td><td align="center">{{ dex_mod | plus: include.dex | default: 0 }}</td></tr>
+    <tr><td>Constitution</td><td align="center">{{ con_mod | plus: include.con | default: 0 }}</td></tr>
+    <tr><td>Intelligence</td><td align="center">{{ int_mod | plus: include.int | default: 0 }}</td></tr>
+    <tr><td>Wisdom</td><td align="center">{{ wis_mod | plus: include.wis | default: 0 }}</td></tr>
+    <tr><td>Charisma</td><td align="center">{{ cha_mod | plus: include.cha | default: 0 }}</td></tr>
   </tbody>
 </table>
 </html>

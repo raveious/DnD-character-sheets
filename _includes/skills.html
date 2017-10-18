@@ -2,16 +2,17 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 <table>
   <thead>
+    <tr><th colspan="2">Skills</th></tr>
   </thead>
 
   <tbody>
     {% for p in site.data.proficiencies %}
-    <tr><td>{{p.name}} ({{p.type | capitalize }})</td><td>
+    <tr><td>{{p.name}} ({{p.type | capitalize }})</td><td align="center">
       {% if page.proficiencies contains p.name %}
         <span style="font-weight:bold">{{ page[p.type] | minus: 10 | divided_by: 2 | plus: proficiency | default: 0 }}</span>
       {% else %}
         {{ page[p.type] | minus: 10 | divided_by: 2 | plus: include.alternative | default: 0 }}
-      {% endif%}
+      {% endif %}
     </td></tr>
     {% endfor %}
   </tbody>

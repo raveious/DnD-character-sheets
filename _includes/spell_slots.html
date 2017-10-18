@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+{% if site.data.spell_slots contains page.class %}
+{{site.data.spell_slots[page.class]}}
+<table>
+  {% for s in site.data.spell_slots[page.class] %}
+  <thead>
+  </thead>
+
+  <tbody>
+    <tr><td>First level spells</td><td>
+      <!-- {% if s <= page.level %}
+      <input type="checkbox"/>
+      {% else %}
+      <input type="checkbox" disabled="disabled"/>
+      {% endif %} -->
+      {{s[s]}}
+    </td></tr>
+  </tbody>
+  {% endfor %}
+</table>
+{% endif %}
+</html>

@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 
-  {% include creature_header.html %}
-  {% assign proficiency = page.level | minus: 1 | divided_by: 4 | plus: 2 %}
-  {% assign initiative = page.dex | minus: 10 | divided_by: 2 %}
+  {% include header.html %}
 
-  <section id="main_content">
-    {% include bio/{{ page.class }}.html %}
-    {{ content }}
-  </section>
+  <body>
+    <div class="shell">
+      {% include creature_header.html %}
 
-  {% include footer.html %}
+      <section id="main_content">
+        {% include bio/{{ page.class }}.html %}
+        {% include spell_slots.html %}
+        {{ content }}
+      </section>
+
+      {% include footer.html %}
+    </div>
+  </body>
 </html>

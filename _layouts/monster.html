@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 
-  {% include creature_header.html %}
+  {% include header.html %}
 
-  <section id="main_content">
-    {{ content }}
-  </section>
+  <body>
+    <div class="shell">
+      {% include creature_header.html %}
 
-  {% include footer.html %}
+      <section id="main_content">
+        {{ content }}
+      </section>
+
+      {% include footer.html %}
+    </div>
+  </body>
 </html>

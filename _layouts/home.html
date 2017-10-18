@@ -3,54 +3,86 @@
 
   {% include header.html %}
 
-  <section id="main_content">
-    {{ content }}
+  <body>
+    <div class="shell">
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>{{ site.title | default: site.github.repository_name | replace: "-", " " }}</h1>
+            <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
 
-    {% assign weapon_types = site.weapons | map: "weapon" | uniq | sort %}
-    {% unless weapon_types == empty %}
-    <h1>Unique Weapons</h1>
-    {% for weapon in weapon_types %}
-      <h2>{{ weapon | capitalize }}s</h2>
-      <ul>
-      {% for w in site.weapons %}
-        {% if w.weapon == weapon %}
-          <li><a href="{{ w.url | prepend: site.baseurl }}">{{ w.name }}</a></li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    {% endfor %}
-    {% endunless %}
+      {% if site.show_downloads %}
+        <section id="downloads">
+          <span class="inner">
+            <a href="{{ site.github.zip_url }}" class="zip"><em>download</em> .ZIP</a><a href="{{ site.github.tar_url }}" class="tgz"><em>download</em> .TGZ</a>
+          </span>
+        </section>
+      {% else %}
+        <div id="no-downloads">
+          <span class="inner">
+          </span>
+        </div>
+      {% endif %}
 
-    {% assign character_classes = site.characters | map: "class" | uniq | sort %}
-    {% unless character_classes == empty %}
-    <h1>Characters</h1>
-    {% for c_class in character_classes %}
-      <h2>{{ c_class | capitalize }}s</h2>
-      <ul>
-      {% for c in site.characters %}
-        {% if c.class == c_class %}
-          <li><a href="{{ c.url | prepend: site.baseurl }}">{{ c.name }} ({{ c.race | capitalize }})</a></li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    {% endfor %}
-    {% endunless %}
+      <span class="banner-fix"></span>
 
-    {% assign monster_classes = site.monsters | map: "class" | uniq | sort %}
-    {% unless monster_classes == empty %}
-      <h1>Monsters</h1>
-      {% for m_class in monster_classes %}
-        <h2>{{ m_class | capitalize }}</h2>
-        <ul>
-        {% for m in site.monsters %}
-          {% if m.class == m_class %}
-            <li><a href="{{ m.url | prepend: site.baseurl  }}">{{ m.name }}</a></li>
-          {% endif %}
+      <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
+
+      <section id="main_content">
+        {{ content }}
+
+        {% assign weapon_types = site.weapons | map: "weapon" | uniq | sort %}
+        {% unless weapon_types == empty %}
+        <h1>Unique Weapons</h1>
+        {% for weapon in weapon_types %}
+          <h2>{{ weapon | capitalize }}s</h2>
+          <ul>
+          {% for w in site.weapons %}
+            {% if w.weapon == weapon %}
+              <li><a href="{{ w.url | prepend: site.baseurl }}">{{ w.name }}</a></li>
+            {% endif %}
+          {% endfor %}
+          </ul>
         {% endfor %}
-        </ul>
-      {% endfor %}
-    {% endunless %}
-  </section>
+        {% endunless %}
 
-  {% include footer.html %}
+        {% assign character_classes = site.characters | map: "class" | uniq | sort %}
+        {% unless character_classes == empty %}
+        <h1>Characters</h1>
+        {% for c_class in character_classes %}
+          <h2>{{ c_class | capitalize }}s</h2>
+          <ul>
+          {% for c in site.characters %}
+            {% if c.class == c_class %}
+              <li><a href="{{ c.url | prepend: site.baseurl }}">{{ c.name }} ({{ c.race | capitalize }})</a></li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        {% endfor %}
+        {% endunless %}
+
+        {% assign monster_classes = site.monsters | map: "class" | uniq | sort %}
+        {% unless monster_classes == empty %}
+          <h1>Monsters</h1>
+          {% for m_class in monster_classes %}
+            <h2>{{ m_class | capitalize }}</h2>
+            <ul>
+            {% for m in site.monsters %}
+              {% if m.class == m_class %}
+                <li><a href="{{ m.url | prepend: site.baseurl  }}">{{ m.name }}</a></li>
+              {% endif %}
+            {% endfor %}
+            </ul>
+          {% endfor %}
+        {% endunless %}
+      </section>
+
+      {% include footer.html %}
+    </div>
+  </body>
 </html>
