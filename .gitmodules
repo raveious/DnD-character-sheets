@@ -1,0 +1,3 @@
+[submodule "dnd5tools"]
+	path = dnd5tools
+	url = https://github.com/Radai/dnd5tools.git
