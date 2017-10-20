@@ -9,8 +9,9 @@
 
       <section id="main_content">
         {% include bio/{{ page.class }}.html %}
-        {% include spell_slots.html %}
         {{ content }}
+        {% include feats.html %}
+        {% include spells.html %}
       </section>
 
       {% include footer.html %}

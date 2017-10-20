@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <h1 class="header-level-1">Known Spells</h1>
+
+  {% assign c_spells = site.data.compendium['spell'] | sort: "level" %}
+  {% assign spell_level_group = 0 %}
+
+  <h2 class="header-level-2">Cantrips</h2>
+  {% for spell in c_spells %}
+
+    {% if page.spells contains spell['name'] %}
+      {% assign spell_level = spell['level'] | plus: 0 %}
+      {% if spell_level_group != spell_level %}
+        <h2 class="header-level-2">Level {{ spell['level'] }} Spells</h2>
+        {% assign spell_level_group = spell_level_group | plus: 1 %}
+      {% endif %}
+
+      <h3 class="header-level-3">{{ spell['name'] }}</h3>
+      <p><em>Level {{ spell['level'] }} {{ spell['school']}}</em></p>
+      <p><span style="font-weight:bold">Casting Time:</span> {{ spell['time'] }}</p>
+      <p><span style="font-weight:bold">Range: </span> {{ spell['range'] }}</p>
+      <p><span style="font-weight:bold">Components: </span> {{ spell['components'] }}</p>
+      <p><span style="font-weight:bold">Duration: </span> {{ spell['duration'] }}</p>
+
+      {% for spell_txt in spell['text'] %}
+        {% if spell_txt %}
+          <p>{{ spell_txt }}</p>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</html>

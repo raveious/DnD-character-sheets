@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <h1 class="header-level-1">Feats</h1>
+
+  {% assign c_feats = site.data.compendium['feat'] | sort: "name" %}
+  {% for feat in c_feats %}
+    {% if page.feats contains feat['name'] %}
+      <h2 class="header-level-2">{{ feat['name'] }}</h2>
+
+      {% for feat_txt in feat['text'] %}
+        {% if feat_txt %}
+          <p>{{ feat_txt }}</p>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</html>
