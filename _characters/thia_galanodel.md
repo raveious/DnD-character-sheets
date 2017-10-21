@@ -24,7 +24,7 @@ proficiencies:
 feats:
   - Lucky
   - Magic Initiate
-  - Spell Sniper
+  - War Caster
 spells:
   - Blade Ward
   - Mending
@@ -43,7 +43,6 @@ spells:
   - Mass Healing Word
   - Counterspell
   - Polymorph
-  - Green-Flame Blade (SCAG)
   - Misty Step
   - Leomund's Tiny Hut
 ---
@@ -171,12 +170,12 @@ You regain any expended uses when you finish a long rest.
 Your Bardic Inspiration die changes when you reach certain levels in this class.
 The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.
 
+### Font of Inspiration
+Starting at 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.
+
 ## Boon of Dimensional Travel
 
 As an action, you can cast the *Misty Step* spell, without using a spell slot or any components. Once you do so, you can't use this boon again until you finish a short rest.
-
-### Font of Inspiration
-Starting at 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.
 
 ## Jack of All Trades
 
