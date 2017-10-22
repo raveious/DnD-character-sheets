@@ -1,5 +1,7 @@
 # DnD Character Sheets on Github Pages
 
+[![Build Status](https://travis-ci.org/raveious/DnD-character-sheets.svg?branch=master)](https://travis-ci.org/raveious/DnD-character-sheets)
+
 Drop a markdown file the respective folder, either `_characters` or `_monsters`, and all the layouts will automatically be set. The home page will ever generate all the links to all of the characters and monsters you have.
 
 ## Template usage
@@ -33,6 +35,8 @@ int | The Intelligence attribute associated with this creature. This is set to 1
 wis | The Wisdom attribute associated with this creature. This is set to 10 if no value is provided.
 cha | The Charisma attribute associated with this creature. This is set to 10 if no value is provided.
 proficiencies | list of all the skills your character is proficient in. Refer to [this list](_data/proficiencies.yml) for proper cast sensitive strings.
+feats | Refer [here](http://radai.github.io/dnd5tools/) for proper spelling and casing for the available options. This pulls all the data from [this great 5E compendium](http://radai.github.io/dnd5tools/).
+spells | Refer [here](http://radai.github.io/dnd5tools/) for proper spelling and casing for the available options. This pulls all the data from [this great 5E compendium](http://radai.github.io/dnd5tools/).
 
 list of all monster fields
 
