@@ -13,6 +13,7 @@ con: 16
 int: 12
 wis: 10
 cha: 18
+proficiency: 4
 proficiencies:
   - Deception
   - History
@@ -67,6 +68,7 @@ spells:
 - Boots of Speed
   - Requires attunement
   - Using a bonus action, the wearer can double their movement speed. Opponents that get attacks of opportunity against you, have disadvantage when attacking you.
+  - Once activated, the effect lasts for 10 minutes.
 - Bracers of Defense
   - Requires attunement
   - +2 to AC

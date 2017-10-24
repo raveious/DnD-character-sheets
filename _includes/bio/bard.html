@@ -2,7 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 
 {% if page.level >= 2 %}
-  {% assign jack_of_all_trades = proficiency | divided_by: 2 %}
+  {% assign jack_of_all_trades = page.proficiency | divided_by: 2 %}
   {% assign initiative = initiative | plus: jack_of_all_trades %}
 {% else %}
   {% assign jack_of_all_trades = 0 %}
@@ -10,11 +10,11 @@
 
 {% include saves.html
   str=jack_of_all_trades
-  dex=proficiency
+  dex=page.proficiency
   con=jack_of_all_trades
   int=jack_of_all_trades
   wis=jack_of_all_trades
-  cha=proficiency
+  cha=page.proficiency
   %}
 
 {% include skills.html alternative=jack_of_all_trades %}

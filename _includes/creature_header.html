@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  {% assign proficiency = page.level | divided_by: 4 | plus: 2 %}
   {% assign initiative = page.dex | minus: 10 | divided_by: 2 %}
   {% assign initiative = initiative | plus: page.init_buff %}
 
